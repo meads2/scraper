@@ -2,19 +2,19 @@ import itertools as it
 import urllib.parse as url
 
 
-def create_site_combinations(sites, filetypes):
+def create_site_combinations(list1, list2):
     '''
     Creates a unique list of all url combinations for
-    a site and filetype combination
+    2 iterable lists
 
     Params:
-        sites - list of target site urls to search for
-        filetypes - list of filetype extensions to search for
+        list1 - list of term set 1
+        list2 - list of term set 2
     
     Returns:
         combos - list of tuples containing site, filetype
     '''
-    combos = [*it.product(sites, filetypes)]
+    combos = [*it.product(list1, list2)]
 
     return combos
 
