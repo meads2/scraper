@@ -1,6 +1,3 @@
-import pandas as pd
-import numpy as np
-
 def get_serach_terms(file):
     '''
     Bulk Loads a spreadsheet like datasource 
