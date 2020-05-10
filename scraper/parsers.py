@@ -25,24 +25,31 @@ class Parser:
                           'yahoo': '',
                           'bing': ''
                           }
-        res = self.soup.find_all(result_classes[self.engine])
+        res = self.soup.find_all(class_=result_classes[self.engine])
+        return res
 
     def _parse_results(self):
         '''
         Parses the search results into clean normalized dictionary
         '''
         res = self._get_results()
-        if res is not None:
-            for r in res:
-                print(r)
-                self._results.append(r)
-        else: 
+        if res is None:
             return None
+        else:
+            for r in res:
+                parsed = {'title': r.find(class_='a').text,
+                          'url': r.find(class_='a')['href'],
+                          'description': r.find(class_='g').text
+                         }
+            self._results.append(parsed)
+            return parsed
 
     def to_pandas(self):
         '''
         Generates Pandas dataframe from parsed search results
         '''
+        self._parse_results()
+
         df = pd.DataFrame(self._results)
         return df
      

@@ -1,1 +1,0 @@
-web: gunicorn scraper:__main__.main

@@ -12,9 +12,9 @@ USERS_DOWNLOAD=Path.cwd()
 
 @click.command()
 @click.argument('terms')
-@click.option('--showme', default=True, help='True false value to control whether browser opens.(Defaults to true, browser hidden)')
-@click.option('--dest', default=USERS_DOWNLOAD, help='Destination to save result files to.(Defaults to users downloads')
-@click.option('--selfie', default=False, help='If passed, takes a screenshot of search results. Useful for debugging.')
+@click.option('--showme', default = True, help = 'True false value to control whether browser opens.(Defaults to true, browser hidden)')
+@click.option('--dest', default = USERS_DOWNLOAD, help = 'Destination to save result files to.(Defaults to users downloads')
+@click.option('--selfie', default = False, help = 'If passed, takes a screenshot of search results. Useful for debugging.')
 def main(terms, showme, dest, selfie):
     '''
     Web scraping search engine results made easy.
@@ -25,10 +25,13 @@ def main(terms, showme, dest, selfie):
     
     url = create_search_url(terms)
     print(url)
-    html = get_html(url)
+    html = open('./test.html').readlines()#get_html(url)
+
     prsr = Parser(html)
-    prsr._parse_results()
-    
+    results = prsr._parse_results()
+    for r in results:
+        print(r)
+        print('\n')
     
 if __name__ == '__main__':
     main()
