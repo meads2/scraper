@@ -38,7 +38,25 @@ You can use additional flags for various functionality if desired, some default 
 
 **--silent** - Defaults to True. If false, browser window will open at runtime to see execution, useful for debugging.
 
-#### **4. Check downloads folder for screenshot and file**
-This application saves the scraped web results to a users download folder along with a screenshot of search performed for review and debugging if necessary.
+### **Examples**
 
-### **Features**
+#### **Basic Example**
+```bash
+python scraper --terms 'daily news near me'
+### ... running and scraping quietly
+### Check your downloads for a surprise!
+```
+
+#### **Verbose Example**
+```bash
+python scraper --terms 'daily news near me' --showme 
+### ... running and scraping right before your eyes
+### Check your downloads for a surprise
+```
+
+#### **Custom Save Example**
+```bash
+python scraper --terms 'daily news near me' --dest '../some/location/'
+### ... running and scraping quietly to your defined location
+### Check your downloads for a surprise!
+```
