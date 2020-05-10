@@ -7,10 +7,14 @@ class Parser:
     search engine results from Search Engine results
     pages across major engines.
     '''
-    def __init__(self, html, parser='lxml'):
+    def __init__(self, html, parser='html.parser', engine='google'):
         self.html = html
         self.soup = BeautifulSoup(html, parser)
-
+        self.engine = engine
+    
+    def get_results(self):
+        res = self.soup.find_all(class_='rc')
+    
 class GoogleParser(Parser):
     pass
 
