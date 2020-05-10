@@ -28,10 +28,7 @@ def main(terms, showme, dest, selfie):
     html = open('./test.html').readlines()#get_html(url)
 
     prsr = Parser(html)
-    results = prsr._parse_results()
-    for r in results:
-        print(r)
-        print('\n')
+    prsr._parse_results()
     
 if __name__ == '__main__':
     main()
