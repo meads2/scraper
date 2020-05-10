@@ -1,4 +1,3 @@
-## **Scraper**
 ![](docs/Artboard.png)
 ![GitHub All Releases](https://img.shields.io/github/downloads/meads2/scraper/total)
 ![GitHub last commit](https://img.shields.io/github/last-commit/meads2/scraper)
