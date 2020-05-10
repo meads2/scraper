@@ -24,10 +24,11 @@ def main(terms, showme, dest, selfie):
     click.echo(f'Search for: {terms}')
     
     url = create_search_url(terms)
+    print(url)
     html = get_html(url)
-    parser = Parser(html)
-    res = parser.get_results()
-    print(res)
-   
+    prsr = Parser(html)
+    prsr._parse_results()
+    
+    
 if __name__ == '__main__':
     main()
