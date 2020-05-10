@@ -29,9 +29,13 @@ python scraper --terms 'my favorite team'
 You can use additional flags for various functionality if desired, some default assumptions are assumed.
 
 **Parameters**
+
 --terms - String value of search terms to pass to scraper engine. (Must be quote encapsalated)
+
 --screenshot - Defaults to False. If present selenium will take a screenshot of browser search window
+
 --dest - Defaults to user's download. If specified will save results to defined location
+
 --silent - Defaults to True. If false, browser window will open at runtime to see execution, useful for debugging.
 
 #### **4. Check downloads folder for screenshot and file**
