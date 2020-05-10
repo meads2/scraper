@@ -1,9 +1,16 @@
 ![](docs/Artboard.png)
 ![GitHub All Releases](https://img.shields.io/github/downloads/meads2/scraper/total)
 ![GitHub last commit](https://img.shields.io/github/last-commit/meads2/scraper)
+![Python](https://img.shields.io/badge/Python-3.0-green.svg)
+[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars)](https://github.com/meads2/scraper)
+[![Sourcegraph for Repo Reference Count](https://img.shields.io/sourcegraph/rrc/github.com/gorilla/mux.svg)](https://github.com/meads2/scraper)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)](https://github.com/meads2/scraper)
+[![Codacy grade](https://img.shields.io/codacy/grade/e27821fb6289410b8f58338c7e0bc686.svg)](https://github.com/meads2/scraper)
 
 ## Scraper
-A library for performing simple web scraping of a search engine's results page for data analysis tasks. (Note: For personal non-commercial use only. Follow all web scraping guidelines, before getting started. Be kind to servers.)
+A library for performing simple web scraping of a search engine's results page for data analysis tasks. *(Note: For personal non-commercial use only. Follow all web scraping guidelines, before getting started. Be kind to servers.)*
+
+> Requies Python version 3.6 or greater.
 
 ### **Getting Started**
 This library is intended for personal use only to get search results from a search engine for downstream analysis. 
