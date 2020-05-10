@@ -38,6 +38,7 @@ You can use additional flags for various functionality if desired, some default 
 
 **--showme** - If present browser window will open at runtime to see execution, useful for debugging.
 
+**--engine** - If specified will use that search engine, defaults to Google. ['Bing' - Microsoft Bing, 'duck' - DuckDuckGo, 'google' - Google, 'Yahoo'-Yahoo]
 ### **Examples**
 
 #### **Basic Example**
