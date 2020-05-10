@@ -32,17 +32,24 @@ You can use additional flags for various functionality if desired, some default 
 
 **--terms** - String value of search terms to pass to scraper engine. (Must be quote encapsalated)
 
-**--screenshot** - Defaults to False. If present selenium will take a screenshot of browser search window
+**--selfie** - If present selenium will take a screenshot of the browser search window returned.
 
-**--dest** - Defaults to user's download. If specified will save results to defined location
+**--dest** - If specified will save results to defined location
 
-**--silent** - Defaults to True. If false, browser window will open at runtime to see execution, useful for debugging.
+**--showme** - If present browser window will open at runtime to see execution, useful for debugging.
 
 ### **Examples**
 
 #### **Basic Example**
 ```bash
 python scraper --terms 'daily news near me'
+### ... running and scraping quietly
+### Check your downloads for a surprise!
+```
+
+#### **Screenshot Example**
+```bash
+python scraper --terms 'daily news near me' --selfie
 ### ... running and scraping quietly
 ### Check your downloads for a surprise!
 ```
