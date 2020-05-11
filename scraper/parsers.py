@@ -37,10 +37,12 @@ class Parser:
             return None
         else:
             for r in res:
-                self._results.append(r)
-                print(r.find('a').text)
-                print(r.find('a')['href'])
-                print('')
+                data = {'title': r.find('a').text,
+                        'link': r.find('a')['href'],
+                        'desc': r.find(class_='st').text
+                       }
+                    
+                self._results.append(data)
 
     def to_pandas(self):
         '''

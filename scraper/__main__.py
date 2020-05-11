@@ -28,7 +28,8 @@ def main(terms, showme, dest, selfie):
     html = get_html(url)
 
     prsr = Parser(html)
-    prsr._parse_results()
+    df = prsr.to_pandas()
+    print(df)
     
 if __name__ == '__main__':
     main()
