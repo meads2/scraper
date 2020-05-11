@@ -22,10 +22,10 @@ mkdir scraper && cd scraper
 
 #### **2. Clone Project Repo**
 ```bash
+git clone https://github.com/meads2/scraper.git
 python -m venv venv
 source venv/bin/activate
-git clone https://github.com/meads2/scraper.git
-pip install
+pip install -r requirements.txt
 ```
 
 ####  **3. Enter search terms to scrape results**
