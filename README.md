@@ -26,7 +26,7 @@ pwd
 
 ####  **2. Enter search terms to scrape results**
 ```bash
-python scraper --terms 'my favorite team'
+python scraper 'my favorite team'
 ```
 
 You can use additional flags for various functionality if desired, some default assumptions are assumed.
@@ -46,28 +46,28 @@ You can use additional flags for various functionality if desired, some default 
 
 #### **Basic Example**
 ```bash
-python scraper --terms 'daily news near me'
+python scraper 'daily news near me'
 ### ... running and scraping quietly
 ### Check your downloads for a surprise!
 ```
 
 #### **Screenshot Example**
 ```bash
-python scraper --terms 'daily news near me' --selfie
+python scraper 'daily news near me' --selfie
 ### ... running and scraping quietly
 ### Check your downloads for a surprise!
 ```
 
 #### **Verbose Example**
 ```bash
-python scraper --terms 'daily news near me' --showme 
+python scraper 'daily news near me' --showme 
 ### ... running and scraping right before your eyes
 ### Check your downloads for a surprise
 ```
 
 #### **Custom Save Example**
 ```bash
-python scraper --terms 'daily news near me' --dest '../some/location/'
+python scraper 'daily news near me' --dest '../some/location/'
 ### ... running and scraping quietly to your defined location
 ### Check your downloads for a surprise!
 ```
