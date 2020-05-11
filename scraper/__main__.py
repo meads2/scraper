@@ -21,12 +21,15 @@ def main(terms, showme, dest, selfie):
     Get the first page results of your search in
     a nice dataframe.
     '''
-    click.echo(f'Search for: {terms}')
+    click.echo(f'Searching for: {terms}\n')
     
     url = create_search_url(terms)
-    print(url)
+    click.echo(f'{url}\n')
     html = get_html(url)
 
+    if selfie:
+        get_screenshot(url)
+    
     prsr = Parser(html)
     df = prsr.to_pandas()
     print(df)
