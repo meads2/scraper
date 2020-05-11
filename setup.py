@@ -1,7 +1,8 @@
 from setuptools import setup, find_packages
+
 setup(
     name="Scraper",
-    version="0.1",
+    version="0.1.0",
     packages=find_packages(),
     # metadata to display on PyPI
     author="Matt Eads",
