@@ -52,7 +52,7 @@ class Parser:
 
         df = pd.DataFrame(self._results)
         return df
-     
+
 class GoogleParser(Parser):
     '''
     Instance of particular engine parser
