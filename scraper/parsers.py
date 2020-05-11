@@ -38,7 +38,8 @@ class Parser:
         else:
             for r in res:
                 self._results.append(r)
-                print(r)
+                print(r.find('a').text)
+                print(r.find('a')['href'])
                 print('')
 
     def to_pandas(self):
