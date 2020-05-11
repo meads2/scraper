@@ -25,7 +25,7 @@ def main(terms, showme, dest, selfie):
     
     url = create_search_url(terms)
     print(url)
-    html = open('./test.html').readlines()#get_html(url)
+    html = get_html(url)
 
     prsr = Parser(html)
     prsr._parse_results()
