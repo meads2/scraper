@@ -1,9 +1,8 @@
 from scraper.browser import get_screenshot, get_html
 from scraper.search import create_site_combinations, create_search_url, create_audit_url
 from scraper.parsers import Parser, GoogleParser
-
 from tqdm import tqdm
-import time
+from loguru import Logger
 import click
 from pathlib import Path
 
