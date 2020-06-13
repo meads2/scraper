@@ -1,6 +1,6 @@
-from scraper.browser import get_screenshot, get_html
-from scraper.search import create_site_combinations, create_search_url, create_audit_url
-from scraper.parsers import Parser, GoogleParser
+from scraperpy.browser import get_screenshot, get_html
+from scraperpy.search import create_site_combinations, create_search_url, create_audit_url
+from scraperpy.parsers import Parser, GoogleParser
 from tqdm import tqdm
 from loguru import Logger
 import click
